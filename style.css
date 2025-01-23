@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* header */
+  header{
+    background-color: #509441;
+  }
+  .name{
+    color: white;
+    font-size: 24px;
+  }
+  
+  /* Navbar */
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  
+  }
+  .nav-links{
+    display: flex;
+    list-style: none;
+    margin:0;
+    padding: 0;
+    margin-left:auto;
+  
+  }
+  .nav-links li{
+    margin-right: 20px;
+  }
+  
+  .nav-links a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover{
+    color: #fede00;
+  }
+  
+  /* Home Section */
+  .first-section {
+    background-color: #a08600;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .profile-pic {
+    height: 180px;
+    border-radius: 50%;
+    border: 10px solid #4f4203;
+  }
+  
+  .first-section h1{
+    font-size: 2.5rem;
+    color: white;
+  
+  }
+  .subtitle{
+    font-size: 1.5rem;
+    color: white;
+  }
+  .description{
+    font-size: 1.2rem;
+    color: white;
+  }
+  /* second Section */
+  /* about section */
+  
+  .second-section{
+    display:flex;
+    flex-wrap:wrap;
+    padding: 20px;
+    gap:20px;
+  }
+  .image-container{
+    flex:1;
+    text-align: center;
+  }
+  .large-profile-pic{
+    max-width: 100%;
+    height: auto;
+  }
+  .text-content{
+    flex:2;
+    text-align: justify;
+  }
+  
+  /* language section*/
+  .languages-section table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .languages-section th, .languages-section td{
+    border:2px solid black;
+    padding: 8px
+  }
+  .languages-section th{
+    background-color: #d7d869;
+  }
+  
+  /* footer */
+  
+  .footer{
+    background-color: lightseagreen ;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  
+  }
+  .social-icon{
+    width: 40px;
+    margin: 0 8px;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      text-align: right;
+    }
+  
+    .second-section {
+      flex-direction: column;
+    }
+  
+    .first-section h1 {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }
+  
+  #back-to-top{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background-color: #a08600;
+    color:white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+  }
